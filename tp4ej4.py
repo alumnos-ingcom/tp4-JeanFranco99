@@ -5,19 +5,20 @@
 ################
 
 def compara(numero, otro_numero):
-    numero = float(input())
-    otro_numero = float(input())
+    
     if numero > otro_numero:
-        print("1")
+        return("1")
     else:
         if numero == otro_numero:
-            print("0")
+            return("0")
         else:
-            print("-1")
+            return("-1")
 
 def prueba():
-    num = compara("Ingrese los numeros")
-    print(num)
+    num1 = float(input("Ingrese el primer numero"))
+    num2 = float(input("Ingrese el segundo numero"))
+    resultado = compara(num1, num2)
+    print(f"{resultado}")
     
 if __name__ == "__main__":
     prueba()

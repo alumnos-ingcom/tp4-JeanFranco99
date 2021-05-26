@@ -13,26 +13,32 @@ def lista_random(cantidad, minimo, maximo):
     return milista
 
 def minimo(lista):
+    n = 0
     lista = milista
     mini = 0
     for i in range(len(lista)):
-        if j < mini:
-        mini= j 
-    print(f"{min}")
-    
-    
+        if n < mini:
+            mini = n 
+    return(f"{min}")
+        
         
 def maximo(lista):
       lista = milista
+      n = 0
     maxi = 0
     for i in range(len(lista)):
-        if j > maxi:
-        maxi= j 
-    print(f"{maxi}")
+        if n > maxi:
+        maxi= n 
+    return(f"{maxi}")
 
 
 def prueba():
-    pass
+    cant = int(input("Ingrese la cantidad de la lista"))
+    mini_list = int(input("Ingrese el minimo de la lista"))
+    max_list = int(input("Ingrese el maximo de la lista"))
+     lis = lista_random(cant, mini_list, max_list)
+     print(f"{lista_random}")
+     
 
 if __name__ == "__main__":
     prueba()

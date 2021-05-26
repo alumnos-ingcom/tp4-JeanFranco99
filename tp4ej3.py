@@ -6,19 +6,26 @@
 
 def convertir_a_fahrrenheit(centigrados):
     """Esta funcion sirve para convertir a F°"""
-    centigrados = int(input("Ingrese la temperatura en centigrados"))
-    fah = 9.0/5.0 * centigrados + 32
-    return("{centigrados} grados Centigrados son {fah} a grados Fahrrenheit")
+       fah = (9.0/5.0 * centigrados) + 32
+        return(fah)
+    
     
 def convertir_a_celsius(fahrenheit):
     """Esta funcion convierte a C°"""
-    fahrenheit = int(input("Ingrese la temperatura en Fahrenheit"))
-    cels = (fahrenheit - 32) * 5.0/9.0
-    return("{fahrenheit} grados Fahrenheit son {cels} a grados Celsius")
+        cels = (fahrenheit - 32) * 5.0/9.0
+        return(cels)
+  
     
 def prueba():
-    celsius = convertir_a_celsius()
-    fahre = convertir_a_fahrrenheit()
+    cent = int(input("ingrese el valor en centigrados para convertirlo en Fahrenheit"))
+        valorfah = convertir_a_fahrrenheit(cent)
+        return(valorfah)
+    fahre = int(input("Ingrese el valor en fahrenheit para convertirlos en Centigrados"))
+        valorcent = convertir_a_celsius(fahre)
+        return(valorcent)
+    
+                    
+   
     
     
 

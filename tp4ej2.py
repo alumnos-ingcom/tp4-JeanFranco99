@@ -5,17 +5,18 @@
 ################
 
 def suma_lenta(numero, otro_numero):
-    numero = int(input())
-    otro_numero = int(input())
+    
         while otro_numero > 0:
             numero = numero + 1
             otro_numero = otro_numero - 1
             print(numero)
             
 def prueba():
-    num = suma_lenta("Ingrese los numeros")
-    print(num)
+    num = int(input("Ingrese el primer numero "))
+    num2 = int(input("Ingresel el segundo numero "))
+    resultado = suma_lenta(num, num2)
+    
     
 
-if __main__ == "__main__":
-    prueba():
+if __name__ == "__main__":
+    prueba()
