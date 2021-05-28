@@ -5,19 +5,19 @@
 ################
 
 def signo(numero):
-       if numero > 0:
-            return(f"{numero} es positivo")
-        else:
-            if numero == 0:
-                return(f"{numero} es cero")
-            else:
-                return(f"{numero} es negativo")
-          
-
+    """Funcion para determinar el signo del numero ingresado"""
+    if numero > 0:
+        return("positivo")
+    elif numero < 0:
+        return("negativo")
+    else:
+        return("cero")
+            
+        
 def prueba():
-    num = int(input("ingrese un numero")
+    num = int(input("ingrese un numero: "))
     resultado = signo(num)
-     print(f"El {num} es {resultado}")
+    print(f"El numero {num} es {resultado}")
 
 if __name__ == "__main__":
     prueba()

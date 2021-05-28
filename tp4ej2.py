@@ -12,8 +12,8 @@ def suma_lenta(numero, otro_numero):
             print(numero)
             
 def prueba():
-    num = int(input("Ingrese el primer numero "))
-    num2 = int(input("Ingresel el segundo numero "))
+    num = int(input("Ingrese el primer numero: "))
+    num2 = int(input("Ingresel el segundo numero: "))
     resultado = suma_lenta(num, num2)
     
     

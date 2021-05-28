@@ -1,5 +1,5 @@
 ################
-# Martín René - @martinvilu
+# Jean Favreau - @JeanFranco99
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
