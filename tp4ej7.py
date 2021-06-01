@@ -12,14 +12,16 @@ def division_lenta(dividendo, divisor):
     while dividendo >= 0:
         resto = resto + 1
         dividendo = dividendo - divisor
-    return(resto)
+    return resto
+    
 
 
 def prueba():
     divid = int(input("Ingrese el dividendo: "))
     divis = int(input("Ingrese el divisor: "))
     resultado = division_lenta(divid,divis)
-    print(f"El resto es: " ,resultado)
+    print("El resto es: " ,resultado)
+
 
 if __name__ == "__main__":
     prueba()

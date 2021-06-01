@@ -17,12 +17,16 @@ def convertir_a_celsius(fahrenheit):
   
     
 def prueba():
-    cent = int(input("Ingrese el valor en Centigrados para convertirlo en Fahrenheit: "))
-    valorfah = convertir_a_fahrrenheit(cent)
-    print(f"El valor en Fahrenheit es: {valorfah}")
-    fahre = int(input("Ingrese el valor en Fahrenheit para convertirlos en Centigrados: "))
-    valorcent = convertir_a_celsius(fahre)
-    print(f"El valor en Centigrados es: {valorcent}")
+    aconver = input("Que es lo que desea convertir? (centigrados,fahrenheit): ")
+    if aconver == "fahrenheit":
+        cent = int(input("Ingrese el valor en Centigrados para convertirlo en Fahrenheit: "))
+        valorfah = convertir_a_fahrrenheit(cent)
+        print(f"El valor en Fahrenheit es: {valorfah}")
+    else:
+        aconver == "centigrados"
+        fahre = int(input("Ingrese el valor en Fahrenheit para convertirlos en Centigrados: "))
+        valorcent = convertir_a_celsius(fahre)
+        print(f"El valor en Centigrados es: {valorcent}")
     
                     
    

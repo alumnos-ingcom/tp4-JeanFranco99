@@ -8,12 +8,12 @@ def compara(numero, otro_numero):
     """ Funcion para comparar los numeros ingresados
     """
     if numero > otro_numero:
-        return(1)
+        return 1
     else:
         if numero == otro_numero:
-            return(0)
+            return 0
         else:
-            return(-1)
+            return -1
 
 def prueba():
     num1 = float(input("Ingrese el primer numero: "))

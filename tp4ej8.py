@@ -6,12 +6,64 @@
 
 def ordenar_mayor_a_menor(uno,dos,tres):
     """Funcion para ordenar los numeros de mayor a menor"""
-    
-    
+    if uno<dos and uno<tres:
+        menor =  uno
+        if dos<tres:
+            medio = dos
+            mayor = tres
+        else:
+            medio = tres
+            mayor = dos
+    elif dos<uno and dos<tres:
+        menor = dos
+        if uno<tres:
+            medio = uno
+            mayor = tres
+        else:
+            medio = tres
+            mayor = uno
+    else:
+        menor = tres
+        if uno<dos:
+            medio = uno
+            mayor = dos
+        else:
+            medio = dos
+            mayor = uno
+    listama = (mayor, medio, menor)
+    listatu = tuple(listama)
+    return listatu
     
 
 def ordenar_menor_a_mayor(uno,dos,tres):
     """Funcion para ordenar los numeros de menor a mayor"""
+    if uno<dos and uno<tres:
+        menor =  uno
+        if dos<tres:
+            medio = dos
+            mayor = tres
+        else:
+            medio = tres
+            mayor = dos
+    elif dos<uno and dos<tres:
+        menor = dos
+        if uno<tres:
+            medio = uno
+            mayor = tres
+        else:
+            medio = tres
+            mayor = uno
+    else:
+        menor = tres
+        if uno<dos:
+            medio = uno
+            mayor = dos
+        else:
+            medio = dos
+            mayor = uno
+    listame = (menor, medio, mayor)
+    listametu = tuple(listame)
+    return listametu
 
 
 

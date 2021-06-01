@@ -31,11 +31,14 @@ def ingreso_entero_reintento(mensaje, cantidad_reintentos=5):
    
 def ingreso_entero_restringido(mensaje,valor_minimo=0, valor_maximo=10):
     pass
+        
+    
 
 
 def prueba():
-    numero = ingreso_entero("Ingrese un numero")
+    numero = ingreso_entero("Ingrese un numero ")
     print(f"El numero es {numero}")
+
  
 if __name__ == "__main__":
     prueba()

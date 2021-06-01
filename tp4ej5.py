@@ -8,10 +8,10 @@ def signo(numero):
     """Funcion para determinar el signo del numero ingresado"""
     if numero > 0:
         return("positivo")
-    elif numero < 0:
-        return("negativo")
-    else:
+    elif numero == 0:
         return("cero")
+    else:
+        return("negativo")
             
         
 def prueba():
